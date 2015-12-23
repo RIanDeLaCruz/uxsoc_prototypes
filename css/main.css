@@ -1,0 +1,377 @@
+/*
+ *
+ * User Experience Website Style Sheet
+ * Author: Ian De la Cruz
+ *
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.topNav {
+  height: 110px;
+  border-bottom: 1px solid #ebebeb;
+  font-family: "Open Sans", sans-serif;
+}
+
+  #pull {
+    display: block;
+    width: 100px;
+    float: left;
+    margin-top: 55px;
+    transform: translateY(-50%);
+    margin-left: 40px;
+    border: 1px solid #008ED4;
+    border-radius: 20px;
+    height: 30px;
+    color: #008ED4;
+    padding-left: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4em;
+  }
+
+  #pull i {
+    padding-top: 7px;
+  }
+
+  #pull span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    margin-left: 20px;
+  }
+
+  .logo_img {
+    display: none;
+  }
+
+  .topNav_list {
+    position: absolute;
+    top:90px;
+    left:0;
+    width: 100%;
+    padding: 0;
+    display: none;
+  }
+
+  .topNav_item {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    height: 60px;
+    background-color: white;
+  }
+
+    .topNav_item a {
+      color: #949494;
+      text-decoration: none;
+    }
+
+    .logo-area {
+      position: absolute;
+      margin-left: 133px;
+      width: calc( 100vw - 290px );
+    }
+
+      .logo-center {
+        display: block;
+        width: 80px;
+        margin: 15px auto 0;
+      }
+
+      .logo_img-center {
+        height: 80px;
+        width: auto;
+      }
+
+  @media (min-width:769px) {
+    #pull {
+      display: none;
+    }
+
+    .topNav nav {
+      height: inherit;
+      width: 60%;
+      float: left;
+    }
+
+    .topNav_list {
+      display: inline-table;
+      height: inherit;
+      margin: 0;
+      position: static;
+      width: auto;
+    }
+
+    .topNav_item {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      padding: 0 20px;
+      font-size: 1.5em;
+      font-weight: 600;
+      height: auto;
+      background-color: rgba(0,0,0,0);
+    }
+
+      .logo {
+        display: block;
+      }
+
+      .logo-area {
+        display: none;
+      }
+
+      .logo_img {
+        display: block;
+        height: 70px;
+        width:auto;
+        float:left;
+        margin-top: 20px;
+        margin-left: 40px;
+      }
+  }
+
+  #search {
+    float: right;
+    width: 80px;
+    margin-right: 80px;
+    position: relative;
+    margin-top: 55px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+  }
+
+  @media (min-width:769px) {
+    #search {
+      margin-right: 120px;
+      font-size: 1.4em;
+    }
+  }
+
+    #search input {
+      border: 1px solid #008ED4;
+      border-radius: 25px;
+      padding: 2px;
+      height: 2.5em;
+    }
+
+      #search input:focus, #search input:active {
+        padding-left: 20px;
+      }
+
+      #search input::-webkit-input-placeholder,
+      #search input::-moz-placeholder,
+      #search input:ms-placeholder {
+        color: #008ED4;
+        font-weight: 400;
+      }
+
+        #search input::-webkit-input-placeholder::before {
+          font-family: "FontAwesome";
+          font-size: 1.2em;
+          content: "\f002";
+          color: #008ED4;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+
+        #search input::moz-placeholder::before {
+          font-family: "FontAwesome";
+          font-size: 1.2em;
+          content: "\f002";
+          color: #008ED4;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+
+        #search input::ms-placeholder::before {
+          font-family: "FontAwesome";
+          font-size: 1.2em;
+          content: "\f002";
+          color: #008ED4;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+
+.sideNav {
+  display: none;
+}
+
+@media (min-width:769px) {
+  .sideNav {
+    display: block;
+    float:left;
+    width: calc(25vw - 20px);
+    height: 100%;
+    padding: 20px 20px 20px 40px;
+  }
+}
+
+  .emailInput {
+    background-color: #ebebeb;
+    border: none;
+    padding: 8px;
+  }
+
+  .submitInput {
+    background-color: #008ED4;
+    color: white;
+    border: 0;
+    padding: 8px;
+    width: 40px;
+  }
+
+  .sideNav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sideNav li[class$="_item"] {
+    margin-bottom: 10px;
+  }
+
+    .sideNav li[class$="_item"] a {
+      color: #989898;
+      text-decoration: none;
+      font-size: 1.4em;
+      /*font-variant: small-caps;*/
+    }
+
+  .asideHeading {
+    color: #008ed4;
+    font-weight: 600;
+    font-variant: small-caps;
+  }
+
+  .newsletterSignup_text {
+    color: #949494;
+    font-size: 1.4em;
+  }
+
+main {
+  width: 100%;
+  border: none;
+}
+
+.articleFeed_item {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 20px;
+}
+
+@media (min-width:769px) {
+  main {
+    float:right;
+    width: 75vw;
+    padding: 20px 15% 20px 30px;
+    border-left: 1px solid #ebebeb;
+  }
+  .articleFeed_item {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+  }
+}
+
+
+.articleFeed_header {
+  margin-bottom: 30px;
+}
+
+  .articleFeed_title {
+      font-size:2.4em;
+      margin: 0.25em 0;
+  }
+
+  .articleFeed_featureImage, .articleFeed_content {
+    flex: 1 0;
+    padding: 0 10px;
+  }
+
+  .articleFeed_author {
+    font-weight: 400;
+  }
+
+    .articleFeed_author a {
+      text-decoration: none;
+    }
+
+    .articleFeed_authorLink {
+      color: #989898;
+      font-weight: 600;
+    }
+
+  .articleFeed_category {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+    .articleFeed_categoryLink {
+      color: #008ED4;
+    }
+
+  .articleFeed_copyInfo {
+    color: #989898;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+    .articleFeed_readInfo {
+      display:inline-block;
+      padding-left: 20px;
+    }
+
+  .articleFeed_copy {
+    font-size: 1.4em;
+    line-height: 1.6;
+    margin-top: 5px;
+    color: #949494;
+  }
+
+footer {
+  width: 100%;
+  height: 240px;
+  clear:both;
+  background-color: #4c4c4c;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 20px;
+}
+
+  .footer_container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.4em;
+    color: #949494;
+  }
+
+    .footer_image {
+      height: 80px;
+      width: auto;
+    }
+
+    .footer_caption {
+      width: 350px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .footer_navItem {
+      color: #949494;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin: 30px;
+    }
