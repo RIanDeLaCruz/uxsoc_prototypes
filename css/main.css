@@ -29,7 +29,7 @@ body {
     float: left;
     margin-top: 55px;
     transform: translateY(-50%);
-    margin-left: 40px;
+    margin-left: 30px;
     border: 1px solid #008ED4;
     border-radius: 20px;
     height: 30px;
@@ -80,7 +80,7 @@ body {
     .logo-area {
       position: absolute;
       margin-left: 133px;
-      width: calc( 100vw - 290px );
+      width: calc( 100vw - 260px );
     }
 
       .logo-center {
@@ -145,7 +145,7 @@ body {
   #search {
     float: right;
     width: 80px;
-    margin-right: 80px;
+    margin-right: 40px;
     position: relative;
     margin-top: 55px;
     transform: translateY(-50%);
@@ -351,7 +351,7 @@ footer {
 }
 
   .footer_container {
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
     text-align: center;
     font-size: 1.4em;
@@ -374,5 +374,5 @@ footer {
       text-decoration: none;
       font-weight: 600;
       display: inline-block;
-      margin: 30px;
+      margin: 30px 16px;
     }
